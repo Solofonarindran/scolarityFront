@@ -5,11 +5,19 @@
     min-height: 600px;
     border: 1px solid var(--scolarity-custom-primary);
     background: #ffffff !important;
-    margin-top: 60px;
+    margin-top: 160px;
     position: relative;
     opacity: 0;
     animation: fade-up 0.5s 0.4s forwards;
-
+    padding: 20px 40px 40px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    &:nth-child(1) {
+      margin-top: 80px;
+    }
     &:nth-child(2) {
       animation: fade-up 0.5s 0.7s forwards;
     }
@@ -31,6 +39,112 @@
       .name-details {
         i {
           margin-right: 4px;
+        }
+      }
+    }
+    .classe-card {
+      width: 300px;
+      height: 150px;
+      background: whitesmoke;
+      margin: 60px 10px 0 10px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      border-radius: 5px;
+      position: relative;
+      display: flex;
+      &:hover {
+        border: 1px solid var(--scolarity-custom-primary) !important;
+        .card-call-to-ation {
+          top: -30px;
+          opacity: 1;
+        }
+      }
+      .card-call-to-ation {
+        width: auto;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        right: 0;
+        display: flex;
+
+        border-radius: 5px 5px 0 0;
+        transition: all 0.3s ease-in-out;
+        .action-btn {
+          border: 0;
+          outline: 0;
+          width: 30px;
+          height: 30px;
+          color: #ffffff;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 4px;
+          &:nth-child(1) {
+            background: var(--scolarity-custom-info);
+          }
+          &:nth-child(2) {
+            background: var(--scolarity-custom-danger);
+            margin: 0 0 0 2px;
+          }
+        }
+      }
+      .classe-name {
+        width: 100px;
+        height: 100%;
+        background: rebeccapurple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px 0 0 5px;
+        h3 {
+          color: #ffffff;
+          font-family: "Roboto", sans-serif;
+          font-weight: 600;
+          sup {
+            font-size: 10px;
+          }
+        }
+      }
+      .classe-info {
+        padding: 15px 30px;
+        .info-item {
+          margin-top: 10px;
+          &:first-child {
+            margin-top: 0;
+          }
+          h5 {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 0.4px;
+            color: var(--scolarity-custom-secondary);
+          }
+          span {
+            margin-top: -5px;
+            font-weight: 700;
+            i {
+              font-size: 11px;
+              padding-right: 3px;
+            }
+          }
+        }
+      }
+
+      //   styling for add new student class
+      &.add-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--scolarity-custom-secondary);
+        &:hover {
+          background: var(--scolarity-custom-primary);
+          color: #ffffff;
+        }
+        i {
+          font-size: 30px;
         }
       }
     }
