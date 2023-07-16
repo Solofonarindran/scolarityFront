@@ -6,3 +6,14 @@
   --scolarity-custom-primary: #886ab5;
   --scolarity-custom-secondary: #868e96;
 }
+// animation
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
