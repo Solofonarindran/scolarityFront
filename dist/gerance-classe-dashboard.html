@@ -28,6 +28,10 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="stylesheet" media="screen, print" href="css/datagrid/datatables/datatables.bundle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/custom-css/gerance-classe-dashboard.css">
 </head>
 
 <body class="mod-bg-1">
@@ -136,13 +140,13 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <ul id="js-nav-menu" class="nav-menu">
                         <li>
                             <a href="#" title="Application Intel">
-                                <i class="fal fa-tachometer-alt"></i>
+                                <i class="fas fa-tachometer-alt"></i>
                                 <span class="nav-link-text" data-i18n="nav.application_intel">Tableau de Bord</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" title="Theme Settings">
-                                <i class="fal fa-graduation-cap"></i>
+                                <i class="fa fa-graduation-cap"></i>
                                 <span class="nav-link-text" data-i18n="nav.theme_settings">Gérance de Classe</span>
                             </a>
                         </li>
@@ -150,7 +154,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         <li class="nav-title">Groupe d'action</li>
                         <li>
                             <a href="#" title="UI Components" data-filter-tags="ui components">
-                                <i class="fal fa-user-plus"></i>
+                                <i class="fa fa-user-plus"></i>
                                 <span class="nav-link-text" data-i18n="nav.ui_components">Gérance d'Inscription</span>
                             </a>
                             <ul>
@@ -170,7 +174,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         </li>
                         <li>
                             <a href="#" title="Utilities" data-filter-tags="utilities">
-                                <i class="fal fa-clipboard"></i>
+                                <i class="fa fa-clipboard"></i>
                                 <span class="nav-link-text" data-i18n="nav.utilities">Evaluation</span>
                             </a>
                             <ul>
@@ -200,7 +204,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         </li>
                         <li>
                             <a href="#" title="Utilities" data-filter-tags="utilities">
-                                <i class="fal fa-chart-line"></i>
+                                <i class="fa fa-chart-line"></i>
                                 <span class="nav-link-text" data-i18n="nav.utilities">Gérance Financière</span>
                             </a>
                             <ul>
@@ -232,7 +236,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
                         <li>
                             <a href="#" title="Theme Settings">
-                                <i class="fal fa-cog"></i>
+                                <i class="fa fa-cog"></i>
                                 <span class="nav-link-text" data-i18n="nav.theme_settings">Paramètre de Compte</span>
                             </a>
                         </li>
@@ -534,27 +538,14 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                 <!-- END Page Header -->
                 <!-- BEGIN Page Content -->
                 <!-- the #js-page-content id is needed for some plugins to initialize -->
-                <main id="js-page-content" role="main" class="page-content">
-                    <!-- <ol class="breadcrumb page-breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="javascript:void(0);">Scolarity Expert</a>
-                        </li>
-                        <li class="breadcrumb-item">Datatables</li>
-                        <li class="breadcrumb-item active">ColReorder</li>
-                        <li class="position-absolute pos-top pos-right d-none d-sm-block">
-                            <span class="js-get-date"></span>
-                        </li>
-                    </ol>
-                    <div class="subheader">
-                        <h1 class="subheader-title">
-                            <i class="subheader-icon fal fa-table"></i> Inscription<sup
-                                class="badge badge-primary fw-500">Action</sup>
-                            <small>
-                                Cette page vous dirige l'inscription !! Veuillez suivre les
-                                étapes...
-                            </small>
-                        </h1>
-                    </div> -->
+                <main id="js-page-content gerance-classe-dasboard" role="main"
+                    class="page-content gerance-classe-dasboard">
+                    <div class="classe-dashboard">
+                        <h1 class="dashboard-name">Primaire</h1>
+                    </div>
+                    <div class="classe-dashboard">
+                        <h1 class="dashboard-name">Sécondaire</h1>
+                    </div>
                 </main>
                 <!-- this overlay is activated only when mobile menu is triggered -->
                 <div class="page-content-overlay" data-action="toggle" data-class="mobile-nav-on"></div>

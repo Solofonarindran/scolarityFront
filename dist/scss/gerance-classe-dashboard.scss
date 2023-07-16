@@ -1,0 +1,19 @@
+@import "./global.scss";
+.gerance-classe-dasboard {
+  .classe-dashboard {
+    width: 100%;
+    min-height: 600px;
+    border: 1px solid var(--scolarity-custom-primary);
+    background: #ffffff !important;
+    margin-top: 60px;
+    position: relative;
+    .dashboard-name {
+      font-size: 16px;
+      padding: 10px 20px;
+      position: absolute;
+      top: -20px;
+      left: 30px;
+      background: #ffffff;
+    }
+  }
+}
