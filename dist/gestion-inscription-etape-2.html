@@ -31,7 +31,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/custom-css/gestion-inscription-etape-1.css">
+    <link rel="stylesheet" href="css/custom-css/gestion-inscription-etape-2.css">
 </head>
 
 <body class="mod-bg-1">
@@ -538,17 +538,43 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                 <!-- END Page Header -->
                 <!-- BEGIN Page Content -->
                 <!-- the #js-page-content id is needed for some plugins to initialize -->
-                <main id="js-page-content" role="main" class="page-content gestion-inscription-etape-1">
+                <main id="js-page-content" role="main" class="page-content gestion-inscription-etape-2">
                     <h1 class="choix-title">Inscription</h1>
                     <div class="choix-cycle shadow-lg">
                         <div class="cycle-icon">
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-graduation-cap"></i>
                         </div>
-                        <h2 class="choix-card-title">choix du cycle</h2>
-                        <div class="choix-action">
-                            <button class="btn btn-primary">Primaire</button>
-                            <button class="btn ">Secondaire</button>
+                        <div class="scolarity-price">
+                            <div class="price-section">
+                                <h4><strong>Droit</strong></h4>
+                                <span>250.000 <sup>Ar</sup></span>
+                            </div>
+                            <div class="price-section">
+                                <h4><strong>Ecolage</strong></h4>
+                                <span>20.000 <sup>Ar</sup></span>
+                            </div>
+
                         </div>
+                        <div class="user-total-pay">
+                            <span>TOTAL: <strong>255.000Ar</strong></span>
+                        </div>
+                        <form action="#" class="form-select">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Veuillez choisir une classe: <span>08 place
+                                        disponnible</span></label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>4eme B</option>
+                                    <option>2nd</option>
+                                    <option>1ere D</option>
+                                </select>
+                            </div>
+                            <div class="confirmation-button text-center">
+                                <button class="btn  btn-outline-danger">Annuler</button>
+                                <button class="btn btn-primary ml-4">Confirmer</button>
+
+                            </div>
+                        </form>
+
                     </div>
 
                 </main>
