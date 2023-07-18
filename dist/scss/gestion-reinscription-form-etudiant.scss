@@ -1,0 +1,110 @@
+@import "./global.scss";
+.gestion-reinscription-form-etudiant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  .etudiant-info-perso {
+    width: 100%;
+    min-height: 260px;
+    border: 1px dashed var(--scolarity-custom-primary);
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-top: 90px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    .person-item-details {
+      font-size: 12px;
+      padding: 12px 18px;
+      color: #ffffff;
+      background: var(--scolarity-custom-primary);
+      position: absolute;
+      top: -20px;
+      left: 35px;
+      border-radius: 5px;
+      font-weight: bold;
+
+      letter-spacing: 0.4px;
+      i {
+        margin-right: 8px;
+      }
+    }
+    .person-items {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .item-person {
+        margin: 6px 0;
+        font-weight: bold;
+        .item-tite {
+          margin-right: 10px;
+        }
+      }
+      .indicator {
+        margin-top: 15px;
+        span {
+          padding: 8px 15px;
+          color: #ffffff;
+          font-weight: bold;
+          border-radius: 5px;
+          &.admise {
+            background: var(--scolarity-custom-success);
+          }
+          &.redoublant {
+            background: var(--scolarity-custom-danger);
+          }
+        }
+      }
+      //align-items: center;
+      &.profile-student-pricture {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 160px;
+          height: 160px;
+          object-fit: cover;
+          border: 1px solid var(--scolarity-custom-primary);
+          border-radius: 5px;
+        }
+      }
+    }
+    &.etudiant-discipline {
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      //align-items: center;
+      flex-direction: column;
+      ul {
+        li {
+          margin: 20px 0;
+          font-size: 14px;
+          letter-spacing: 0.4px;
+          font-family: "Roboto", sans-serif;
+        }
+      }
+    }
+    &.etudiant-frais {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 30px;
+      span {
+        width: 100%;
+        margin: 20px;
+
+        padding: 10px 10px;
+        background: var(--scolarity-custom-secondary);
+        color: #fff;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.4px;
+      }
+    }
+  }
+}
